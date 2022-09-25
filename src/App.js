@@ -50,14 +50,6 @@ class App extends React.Component {
         task: newTask
       });
     };
-    //edit task
-    //   editTask=()=>{
-    //      var editTask = this.state.task[Math.floor(Math.random()*this.state.task.length)];
-    //    this.setState({
-    //      MyNewTask:editTask,
-
-    //    })
-    //   }
   }
 
   render() {
