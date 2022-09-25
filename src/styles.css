@@ -49,3 +49,6 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
+#Mycards:hover {
+  color: red;
+}

@@ -5,7 +5,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cards: ["card_01", "card_02", "card_03", "card_04"],
+      cards: ["card 1", "card 2", "card 3", "card 4"],
       task: ["Sing a song", "Dance", "Fight", "Music"],
       Participent: ["Hemanth", "Logesh", "abhi", "Jagu"],
       show: false,
@@ -59,6 +59,7 @@ class App extends React.Component {
     //    })
     //   }
   }
+
   render() {
     return (
       <>
@@ -78,7 +79,7 @@ class App extends React.Component {
                     id="Cards"
                     onClick={(e) => this.showModal(item, this.state.task)}
                   >
-                    {item}
+                    <h1>{item}</h1>
                   </div>
                 );
               })}
