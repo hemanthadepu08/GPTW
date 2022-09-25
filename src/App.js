@@ -5,7 +5,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cards: ["card 1", "card 2", "card 3", "card 4"],
+      cards: ["Card 1", "Card 2", "Card 3", "Card 4"],
       task: ["Sing a song", "Dance", "Fight", "Music"],
       Participent: ["Hemanth", "Logesh", "abhi", "Jagu"],
       show: false,
@@ -65,11 +65,20 @@ class App extends React.Component {
       <>
         <div class="App">
           <h1 id="MyNavBar">GPTW Activity</h1>
+          <h2>Pick any card </h2>
           <Modal show={this.state.show} handleClose={this.hideModal}>
             <p>{this.state.cardName}</p>
-            <p>{this.state.MyNewTask}</p>
-            <p>{this.state.MyPart}</p>
-            <button onClick={this.handleClick}>Delete</button>
+            <p>
+              <b>Activity: </b>
+              {this.state.MyNewTask}
+            </p>
+            <p>
+              <b>Participent: </b>
+              {this.state.MyPart}
+            </p>
+            <button id="delete" onClick={this.handleClick}>
+              Delete
+            </button>
           </Modal>
           <div id="wrapper">
             <div id="Mycards">

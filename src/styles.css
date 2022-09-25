@@ -17,8 +17,8 @@
 .modal-main {
   position: fixed;
   background: white;
-  width: 80%;
-  height: auto;
+  width: 48%;
+  height: 71%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -51,4 +51,8 @@
 }
 #Mycards:hover {
   color: red;
+}
+
+#delete {
+  margin-right: 24px;
 }
