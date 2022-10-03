@@ -35,7 +35,7 @@ class App extends React.Component {
     //Delete card and Task
     this.handleClick = (e) => {
       console.log(e);
-
+      e.preventDefault();
       for (var i = this.state.cards.length - 1; i >= 0; i--) {
         if (this.state.cards[i] === this.state.cardName) {
           this.state.cards.splice(i, 1);
@@ -45,9 +45,14 @@ class App extends React.Component {
       var indexDel = this.state.task.indexOf(this.state.MyNewTask);
       this.state.task.splice(indexDel, 1);
       var newTask = this.state.task;
+
+      var indexDel1 = this.state.Participent.indexOf(this.state.MyPart);
+      this.state.Participent.splice(indexDel1, 1);
+      var MyPart1 = this.state.Participent;
       this.setState({
         show: false,
-        task: newTask
+        task: newTask,
+        MyPart: MyPart1
       });
     };
   }
