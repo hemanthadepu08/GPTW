@@ -7,7 +7,7 @@ class App extends React.Component {
     this.state = {
       cards: ["Card 1", "Card 2", "Card 3", "Card 4"],
       task: ["Sing a song", "Dance", "Fight", "Music"],
-      Participent: ["Hemanth", "Logesh", "abhi", "Jagu"],
+      Participent: ["Hemanth", "Logesh", "Abhi", "Jagu"],
       show: false,
       cardName: "",
       MyNewTask: "",
